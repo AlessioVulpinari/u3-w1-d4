@@ -37,7 +37,7 @@ class HomePage extends Component {
         </div>
         <h4>Trending Now</h4>
         <div className='row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4'>
-          <Gallery film='Star Wars' />
+          <Gallery film='Star wars' />
         </div>
         <h4>Watch it Again</h4>
         <div className='row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4'>
