@@ -1,23 +1,24 @@
 import { Component } from "react"
+import { Col, Row } from "react-bootstrap"
 
 class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className='row justify-content-center mt-5'>
-          <div className='col col-6'>
-            <div className='row'>
-              <div className='col mb-2'>
+        <Row className='row justify-content-center mt-5'>
+          <Col xs={6}>
+            <Row>
+              <Col className='mb-2'>
                 <i className='bi bi-facebook footer-icon me-2'></i>
                 <i className='bi bi-instagram footer-icon me-2'></i>
                 <i className='bi bi-twitter-x footer-icon me-2'></i>
                 <i className='bi bi-youtube footer-icon'></i>
-              </div>
-            </div>
-            <div className='row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4'>
-              <div className='col'>
-                <div className='row'>
-                  <div className='col footer-links'>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Row>
+                  <Col className='footer-links'>
                     <p>
                       <a href='index.html' alt='footer link'>
                         Audio and Subtitles
@@ -38,12 +39,12 @@ class Footer extends Component {
                         Contact us
                       </a>
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col'>
-                <div className='row'>
-                  <div className='col footer-links'>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row>
+                  <Col className='footer-links'>
                     <p>
                       <a href='index.html' alt='footer link'>
                         Audio Description
@@ -59,12 +60,12 @@ class Footer extends Component {
                         Legal Notices
                       </a>
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col'>
-                <div className='row'>
-                  <div className='col footer-links'>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row>
+                  <Col className='footer-links'>
                     <p>
                       <a href='index.html' alt='footer link'>
                         Help Center
@@ -80,12 +81,12 @@ class Footer extends Component {
                         Cookie Preferences
                       </a>
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col'>
-                <div className='row'>
-                  <div className='col footer-links'>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row>
+                  <Col className='footer-links'>
                     <p>
                       <a href='index.html' alt='footer link'>
                         Gift Cards
@@ -101,22 +102,22 @@ class Footer extends Component {
                         Corporate Information
                       </a>
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col mb-2'>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className='mb-2'>
                 <button type='button' className='btn btn-sm footer-button rounded-0 mt-3'>
                   Service Code
                 </button>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col mb-2 mt-2 copyright'>© 1997-2023 Netflix, Inc.</div>
-            </div>
-          </div>
-        </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col className='mb-2 mt-2 copyright'>© 1997-2023 Netflix, Inc. </Col>
+            </Row>
+          </Col>
+        </Row>
       </footer>
     )
   }
