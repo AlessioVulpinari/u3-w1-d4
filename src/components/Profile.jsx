@@ -2,6 +2,7 @@ import { Component } from "react"
 import avatar from "../assets/avatar.png"
 import Dropdown from "react-bootstrap/Dropdown"
 import DropdownButton from "react-bootstrap/DropdownButton"
+import { Button } from "react-bootstrap"
 
 class Profile extends Component {
   render() {
@@ -20,7 +21,7 @@ class Profile extends Component {
               <section className='border-bottom border-secondary pb-3'>
                 <p className='mb-1'>Language</p>
 
-                <DropdownButton id='dropdown-basic-button' title='Dropdown button' variant='dark'>
+                <DropdownButton id='dropdown-basic-button' title='Dropdown button' variant='outline-secondary'>
                   <Dropdown.Item href='#/action-1'>English</Dropdown.Item>
                   <Dropdown.Item href='#/action-2'>Italian</Dropdown.Item>
                   <Dropdown.Item href='#/action-3'>Russian</Dropdown.Item>
@@ -65,15 +66,15 @@ class Profile extends Component {
             </div>
           </div>
           <div className='mt-3'>
-            <button type='button' className='btn btn-light fw-semibold rounded-0 me-2'>
-              SAVE
-            </button>
-            <button type='button' className='btn btn-outline-secondary rounded-0 me-2'>
-              CANCEL
-            </button>
-            <button type='button' className='btn btn-outline-secondary rounded-0'>
-              DELETE PROFILE
-            </button>
+            <Button variant='light' className='rounded-0 me-2'>
+              Save
+            </Button>
+            <Button variant='outline-secondary' className='rounded-0 me-2'>
+              Cancel
+            </Button>
+            <Button variant='outline-secondary' className='rounded-0'>
+              Delete Profile
+            </Button>
           </div>
         </div>
       </main>
